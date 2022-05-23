@@ -27,9 +27,10 @@ h2,
 h3,
 h4,
 p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -38,14 +39,10 @@ img {
 }
 
 .container {
-  max-width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /* text-align: center; */
-  /* align-items: center;
-  justify-content: center; */
+  margin: 0 auto;
 }
 
 .list {
@@ -74,6 +71,7 @@ img {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .nav-list-link:hover,
@@ -98,6 +96,11 @@ img {
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header .container {
@@ -138,11 +141,15 @@ img {
   padding: 11px 15px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  /* color: var(--white-color); */
+  color: var(--white-color);
 }
 
-/* .hero {
-} */
+.hero-content {
+  background-color: var(--primary-text-color);
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 99px;
+}
 
 /* .hero-list {
 } */
@@ -156,6 +163,10 @@ img {
   font-size: 11px;
   line-height: 1.36;
   color: var(--secondary-text-color);
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
 }
 
 .hero-subtitle,
@@ -176,18 +187,40 @@ img {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  /* color: var(--white-color); */
+  color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .hero-text {
   color: var(--primary-description-text);
 }
 
-/* .about {
-} */
+.about {
+  padding-top: 139px;
+  padding-bottom: 118px;
+}
 
-/* .about-list {
-} */
+.abouts {
+  display: flex;
+}
+
+.abouts .thumb {
+  max-width: 483px;
+  /* padding-right: 55px; */
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-list-item:first-child {
+  margin-right: 30px;
+}
 
 /* .about-list-item {
 } */
@@ -204,6 +237,10 @@ img {
   color: var(--secondary-text-color);
 }
 
+.about-title {
+  margin-bottom: 20px;
+}
+
 .about-title,
 .benefits-title,
 .master-title {
@@ -216,12 +253,14 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* .about-description {
-} */
+.about-description {
+  margin-bottom: 20px;
+}
 
 .about-text {
   font-size: 14px;
   line-height: 1.86;
+  margin-bottom: 47px;
 }
 
 .about-btn {
@@ -231,11 +270,23 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* .price {
-} */
+.prices {
+  display: flex;
+}
 
-/* .price-subtitle {
-} */
+.price {
+  background-color: var(--primary-text-color);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.price-subtitle {
+  margin-bottom: 20px;
+}
+
+.price-title {
+  margin-bottom: 44px;
+}
 
 .price-title,
 .subscribe-title,
@@ -247,13 +298,29 @@ img {
   line-height: 1.16;
   letter-spacing: 0.05em;
 
-  /* color: var(--white-color); */
+  color: var(--white-color);
 }
 
-/* .price-list {
-} */
-/* .price-list-item {
-} */
+.price-list {
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  width: 585px;
+}
+
+.price-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.price-list-item {
+  display: flex;
+}
+
+.price-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 .price-text,
 .price-description {
@@ -263,18 +330,26 @@ img {
 /* .price-description {
 } */
 
-/* .price-btn {
-  color: var(--white-color);
-} */
+.price-btn {
+  display: block;
+  margin: 0 auto;
+}
 
-/* .benefits {
-} */
+.benefits {
+  padding-top: 114px;
+  padding-bottom: 137px;
+}
+
+.benefit-thumb {
+  display: flex;
+}
 
 /* .benefits-list {
 } */
 
-/* .benefits-item {
-} */
+.benefits-item {
+  padding: 20px 24px;
+}
 
 .benefits-accent-number {
   font-weight: 700;
@@ -282,6 +357,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color);
+  margin-bottom: 6px;
 }
 
 .benefits-awards {
@@ -291,11 +367,13 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* .benefits-subtitle {
-} */
+.benefits-subtitle {
+  margin-bottom: 20px;
+}
 
-/* .benefits-title {
-} */
+.benefits-title {
+  margin-bottom: 20px;
+}
 
 /* .benefits-text {
 } */
@@ -412,33 +490,54 @@ img {
   margin-right: 30px;
 }
 
-/* .subscribe {
-} */
+.contact-thumb {
+  display: flex;
+  /* width: 625px; */
+}
+
+.subscribe {
+  padding: 130px 40px 193px 57px;
+  background-color: #191c26;
+  flex-basis: calc(100% / 2);
+  outline: auto;
+}
 
 .subscribe-btn {
   padding: 12px 38px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  /* color: var(--white-color); */
+  color: var(--white-color);
 }
 
 /* .subscribe-title {
 } */
 
-/* .contact {
-} */
+.contact {
+  padding: 130px 105px 130px 100px;
+  flex-basis: calc(100% / 2);
+  background-color: #191c26;
+  outline: auto;
+}
 
-/* .contact-title {
-} */
+.contact-title {
+  margin-bottom: 40px;
+}
 
-/* .address {
-} */
+.address {
+  width: 270px;
+}
 
-/* .addres-list {
-} */
+.addres-list {
+  margin-bottom: 70px;
+}
 
-/* .address-item {
-} */
+.address-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work-graphic-text {
+  margin-bottom: 20px;
+}
 
 .address-geolink,
 .address-tel {
