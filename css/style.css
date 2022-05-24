@@ -581,20 +581,23 @@ img {
   text-decoration: none;
   font-style: normal;
   color: var(--primary-description-text);
+  display: inline-flex;
+  /* align-items: baseline; */
 }
 
 .address-icon {
   display: inline-flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  /* margin-top: 6px; */
   margin-right: 16px;
   stroke: currentColor;
-  fill: transparent;
+  fill: none;
 }
 
-.address-geolink:hover {
+.address-geolink:hover,
+.address-tel:hover,
+.address-mail:hover {
   stroke: var(--accent-color);
-  fill: var(--accent-color);
+  /* fill: var(--accent-color); */
 }
 
 /* .address-tel {
