@@ -35,7 +35,7 @@ ol {
 
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .container {
@@ -101,6 +101,7 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: var(--primary-description-text);
 }
 
 .header .container {
@@ -108,11 +109,12 @@ img {
   align-items: center;
 }
 
-/* .logo {
-} */
+.logo {
+  margin-right: 70px;
+}
 
 .nav {
-  align-items: center;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -122,6 +124,10 @@ img {
 /* .nav-list-item {
 } */
 
+.nav-list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
 .nav-list-link,
 .nav-tel {
   text-decoration: none;
@@ -129,12 +135,14 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  padding: 20px 0px;
 
-  /* color: var(--white-color); */
+  color: var(--white-color);
 }
 
-/* .nav-tel {
-} */
+.nav-tel {
+  margin-right: 40px;
+}
 
 .nav-btn,
 .price-btn {
@@ -316,6 +324,7 @@ img {
 }
 .price-list-item {
   display: flex;
+  justify-content: space-between;
 }
 
 .price-list-item:not(:last-child) {
@@ -338,17 +347,44 @@ img {
 .benefits {
   padding-top: 114px;
   padding-bottom: 137px;
+  background-color: var(--white-color);
+}
+
+.benefits .container {
+  padding-right: 70px;
+  padding-left: 100px;
 }
 
 .benefit-thumb {
   display: flex;
 }
 
-/* .benefits-list {
-} */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 370px;
+  height: 331px;
+  margin-right: 130px;
+}
 
 .benefits-item {
   padding: 20px 24px;
+  width: 170px;
+  height: 133px;
+  text-align: center;
+}
+
+.benefits-item:nth-child(2n + 1) {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.benefits-item:last-child {
+  padding: 20px;
 }
 
 .benefits-accent-number {
@@ -463,6 +499,7 @@ img {
 .galery {
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: var(--white-color);
 }
 
 .galery-subtitle {
@@ -544,6 +581,20 @@ img {
   text-decoration: none;
   font-style: normal;
   color: var(--primary-description-text);
+}
+
+.address-icon {
+  display: inline-flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-right: 16px;
+  stroke: currentColor;
+  fill: transparent;
+}
+
+.address-geolink:hover {
+  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* .address-tel {
