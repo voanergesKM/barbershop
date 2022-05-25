@@ -66,6 +66,8 @@ img {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -146,10 +148,13 @@ img {
 
 .nav-btn,
 .price-btn {
-  padding: 11px 15px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   color: var(--white-color);
+}
+
+.hero .container {
+  display: flex;
 }
 
 .hero-content {
@@ -157,10 +162,12 @@ img {
   padding-top: 272px;
   padding-bottom: 206px;
   padding-left: 99px;
+  flex-grow: 1;
 }
 
-/* .hero-list {
-} */
+.hero-list {
+  width: 90px;
+}
 
 /* .hero-list-item {
 } */
@@ -208,11 +215,11 @@ img {
   padding-bottom: 118px;
 }
 
-.abouts {
+.about .container {
   display: flex;
 }
 
-.abouts .thumb {
+.about .thumb {
   max-width: 483px;
   /* padding-right: 55px; */
 }
@@ -272,7 +279,6 @@ img {
 }
 
 .about-btn {
-  padding: 11px 15px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   color: var(--secondary-text-color);
@@ -351,12 +357,9 @@ img {
 }
 
 .benefits .container {
+  display: flex;
   padding-right: 70px;
   padding-left: 100px;
-}
-
-.benefit-thumb {
-  display: flex;
 }
 
 .benefits-list {
@@ -442,9 +445,6 @@ img {
 
 .master-item {
   flex-basis: calc((100% - 90px) / 3);
-}
-
-.master-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -521,9 +521,6 @@ img {
 
 .galery-item {
   flex-basis: calc((100% - 120px) / 4);
-}
-
-.galery-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -540,7 +537,6 @@ img {
 }
 
 .subscribe-btn {
-  padding: 12px 38px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   color: var(--white-color);
@@ -626,15 +622,24 @@ img {
 /* .footer {
 } */
 
+.footer .container {
+  display: flex;
+  height: 127px;
+  align-items: center;
+}
+
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: var(--primary-description-text);
+  margin-right: auto;
 }
 
-/* .footer-list {
-} */
+.footer-list {
+  display: flex;
+}
+
 /* .footer-item {
 } */
 
@@ -644,4 +649,10 @@ img {
   font-size: 11px;
   line-height: 1.36;
   color: var(--secondary-text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-link:last-child {
+  margin-left: 40px;
 }
