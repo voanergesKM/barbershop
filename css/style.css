@@ -576,34 +576,36 @@ img {
   margin-bottom: 20px;
 }
 
+.address-geolink {
+  display: inline-flex;
+  /* align-items: center; */
+}
+
+.address-geolink .address-icon {
+  margin-top: 10px;
+}
+
 .address-geolink,
 .address-tel {
   text-decoration: none;
   font-style: normal;
   color: var(--primary-description-text);
-  display: inline-flex;
-  /* align-items: baseline; */
 }
 
 .address-icon {
   display: inline-flex;
-  /* margin-top: 6px; */
   margin-right: 16px;
-  stroke: currentColor;
-  fill: none;
+  fill: currentColor;
 }
 
-.address-geolink:hover,
-.address-tel:hover,
-.address-mail:hover {
-  stroke: var(--accent-color);
-  /* fill: var(--accent-color); */
+.address-tel {
+  display: inline-flex;
+  align-items: center;
 }
-
-/* .address-tel {
-} */
 
 .address-mail {
+  display: inline-flex;
+  align-items: center;
   font-style: normal;
   color: var(--primary-description-text);
 }
