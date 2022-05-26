@@ -524,14 +524,15 @@ img {
   margin-right: 30px;
 }
 
-.contact-thumb {
+.subscribe-section .container {
   display: flex;
-  /* width: 625px; */
+}
+.subscribe-section {
+  background-color: #191c26;
 }
 
 .subscribe {
   padding: 130px 40px 193px 57px;
-  background-color: #191c26;
   flex-basis: calc(100% / 2);
   outline: auto;
 }
@@ -547,8 +548,9 @@ img {
 
 .contact {
   padding: 130px 105px 130px 100px;
-  flex-basis: calc(100% / 2);
-  background-color: #191c26;
+  /* flex-basis: calc(100% / 2); */
+  flex-grow: 1;
+
   outline: auto;
 }
 
