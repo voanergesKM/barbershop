@@ -289,9 +289,13 @@ img {
 }
 
 .price {
-  background-color: var(--primary-text-color);
   padding-top: 130px;
   padding-bottom: 130px;
+
+  background-image: url(../images/price-bkg.svg);
+  background-size: cover;
+
+  background-color: #111319;
 }
 
 .price-subtitle {
@@ -316,9 +320,9 @@ img {
 }
 
 .price-list {
+  width: 585px;
   padding: 30px 40px;
   margin-bottom: 50px;
-  width: 585px;
 }
 
 .price-list:first-child {
@@ -528,13 +532,17 @@ img {
   display: flex;
 }
 .subscribe-section {
+  background-image: url(../images/svg/subscribe-bkg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   background-color: #191c26;
 }
 
 .subscribe {
-  padding: 130px 40px 193px 57px;
+  padding: 130px 0px;
   flex-basis: calc(100% / 2);
-  outline: auto;
+  /* outline: auto; */
 }
 
 .subscribe-btn {
@@ -547,11 +555,11 @@ img {
 } */
 
 .contact {
-  padding: 130px 105px 130px 100px;
+  padding: 130px 0px 130px 100px;
   /* flex-basis: calc(100% / 2); */
   flex-grow: 1;
 
-  outline: auto;
+  /* outline: auto; */
 }
 
 .contact-title {
