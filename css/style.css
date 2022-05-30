@@ -103,7 +103,11 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: var(--primary-description-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: var(--primary-description-text); */
 }
 
 .header .container {
@@ -158,7 +162,13 @@ img {
 }
 
 .hero-content {
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--primary-text-color);
+
   padding-top: 272px;
   padding-bottom: 206px;
   padding-left: 99px;
@@ -184,8 +194,19 @@ img {
   margin-bottom: 20px;
 }
 
+.hero-subtitle::before,
+.price-subtitle::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: var(--primary-subtitle-text);
+}
+
 .hero-subtitle,
 .price-subtitle {
+  display: inline-flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -240,10 +261,23 @@ img {
 /* .about-list-item {
 } */
 
+.about-subtitle::before,
+.benefits-subtitle::before,
+.master-subtitle::before,
+.galery-subtitle::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: var(--secondary-text-color);
+}
+
 .about-subtitle,
 .benefits-subtitle,
 .master-subtitle,
 .galery-subtitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -293,7 +327,11 @@ img {
   padding-bottom: 130px;
 
   background-image: url(../images/price-bkg.svg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  max-width: 1280px;
+  margin: 0 auto;
 
   background-color: #111319;
 }
@@ -535,8 +573,10 @@ img {
   background-image: url(../images/svg/subscribe-bkg.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: right center;
   background-color: #191c26;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .subscribe {
@@ -648,6 +688,15 @@ img {
 
 .footer-list {
   display: flex;
+  align-items: baseline;
+}
+
+.footer-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: var(--secondary-text-color);
 }
 
 /* .footer-item {
