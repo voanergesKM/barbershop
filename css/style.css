@@ -373,15 +373,30 @@ img {
 .price-list-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .price-list-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
+.price-list-item::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: currentColor;
+  flex-grow: 1;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
 .price-text,
 .price-description {
   color: var(--primary-description-text);
+}
+
+.price-text {
+  order: -1;
 }
 
 /* .price-description {
@@ -433,12 +448,26 @@ img {
 }
 
 .benefits-accent-number {
+  position: relative;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color);
   margin-bottom: 6px;
+  /* display: flex; */
+}
+
+.benefits-accent-number:after {
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+
+  color: var(--accent-color);
 }
 
 .benefits-awards {
@@ -572,8 +601,8 @@ img {
 .subscribe-section {
   background-image: url(../images/svg/subscribe-bkg.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right center;
+  background-size: calc(50% - 15px);
+  background-position: right;
   background-color: #191c26;
   max-width: 1280px;
   margin: 0 auto;
@@ -618,10 +647,6 @@ img {
   margin-bottom: 20px;
 }
 
-.work-graphic-text {
-  margin-bottom: 20px;
-}
-
 .address-geolink {
   display: inline-flex;
   /* align-items: center; */
@@ -663,6 +688,18 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.work-graphic-text::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: currentcolor;
 }
 
 .work-graphic-time {
