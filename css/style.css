@@ -74,6 +74,15 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+
+  transition: color 250ms ease-in-out, background-color 250ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .nav-list-link:hover,
@@ -93,13 +102,6 @@ img {
   color: var(--accent-color);
 }
 
-.btn:hover,
-.btn:focus {
-  cursor: pointer;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -107,7 +109,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: var(--primary-description-text); */
 }
 
 .header .container {
@@ -144,6 +145,8 @@ img {
   padding: 20px 0px;
 
   color: var(--white-color);
+
+  transition: color 250ms ease-in-out;
 }
 
 .nav-tel {
@@ -557,6 +560,8 @@ img {
   height: 44px;
 
   fill: var(--secondary-text-color);
+
+  transition: fill 250ms linear;
 }
 
 .social-link:hover,
@@ -661,6 +666,8 @@ img {
   text-decoration: none;
   font-style: normal;
   color: var(--primary-description-text);
+
+  transition: color 250ms ease-in-out;
 }
 
 .address-icon {
@@ -679,6 +686,8 @@ img {
   align-items: center;
   font-style: normal;
   color: var(--primary-description-text);
+
+  transition: color 250ms ease-in-out;
 }
 
 .work-graphic-text {
@@ -747,6 +756,8 @@ img {
   color: var(--secondary-text-color);
   padding-top: 10px;
   padding-bottom: 10px;
+
+  transition: color 250ms ease-in-out;
 }
 
 .footer-link:last-child {
