@@ -329,7 +329,22 @@
         <div class="container">
           <div class="subscribe">
             <h2 class="subscribe-title">Онлайн-запис</h2>
-            <button type="button" class="subscribe-btn btn">Надіслати</button>
+            <form>
+              <div class="subscribe__thumb">
+                <label for="name" class="subscribe__label subscribe__label--name">Ім'я*</label>
+                <input type="name" class="subscribe__input subscribe__input--name" id="name" />
+
+                <label for="tel" class="subscribe__label subscribe__label--tel">Телефон*</label>
+                <input type="tel" class="subscribe__input subscribe__input--tel" id="tel" />
+              </div>
+              <div class="comment-thumb">
+                <label for="comment" class="subscribe__label comment comment__label"
+                  >повідомлення
+                  <textarea name="comment" id="comment" class="comment__input"></textarea>
+                </label>
+              </div>
+              <button type="button" class="subscribe-btn btn">Надіслати</button>
+            </form>
           </div>
           <div class="contact">
             <h2 class="contact-title">Контакти</h2>
