@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -67,7 +69,7 @@
           </div>
         </div>
       </section>
-      <section id="about-us" class="about">
+      <section id="about-us " class="about" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
           <ul class="about-list list">
             <li class="about-list-item">
@@ -98,7 +100,13 @@
           </div>
         </div>
       </section>
-      <section id="price" class="price">
+      <section
+        id="price"
+        class="price"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="container">
           <p class="price-subtitle">Проведи час в компанії кращих майстрів</p>
           <h2 class="price-title">Послуги та ціни</h2>
@@ -406,5 +414,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
