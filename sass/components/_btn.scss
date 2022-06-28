@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 41px;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  color: $secondary-text-color;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: $secondary-text-color;
+
+  transition: color 250ms ease-in-out, background-color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
