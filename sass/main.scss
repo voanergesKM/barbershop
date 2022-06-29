@@ -1,6 +1,15 @@
 @import './utils/variables';
 @import './utils/base-styles';
+@import './utils/mixins';
+
 @import './components/logo';
 @import './components/btn';
+@import './components/section';
+@import './components/subtitle';
+@import './components/title';
 
 @import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/price';
+@import './layout/benefits';

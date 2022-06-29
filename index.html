@@ -81,139 +81,159 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-thumb">
-            <ul class="hero-list list">
-              <li class="hero-list-item">
-                <a href="" target="_blank" rel="noopener nofollow noreferrer" class="hero-link"
+          <div class="hero__thumb">
+            <ul class="hero__list list">
+              <li class="hero__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="hero__link link"
                   >Instagram</a
                 >
               </li>
-              <li class="hero-list-item">
-                <a href="" target="_blank" rel="noopener nofollow noreferrer" class="hero-link"
+              <li class="hero__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="hero__link link"
                   >Youtube</a
                 >
               </li>
             </ul>
           </div>
-          <div class="hero-content">
-            <p lang="en" class="hero-subtitle">A hair salon for men in Kyiv</p>
-            <h1 lang="en" class="hero-title">BarberShop</h1>
-            <p class="hero-text">
-              Ми експерти в модних чоловічих стрижках. <br />
-              Працюємо швидко, обережно та зі смаком.
+          <div class="hero__content">
+            <p lang="en" class="hero__subtitle subtitle">A hair salon for men in Kyiv</p>
+            <h1 lang="en" class="hero__title title">BarberShop</h1>
+            <p class="hero__text">
+              Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
             </p>
           </div>
         </div>
       </section>
-      <section id="about-us" class="about" data-aos="fade-up" data-aos-duration="3000">
+      <section id="about-us" class="about section">
         <div class="container">
-          <ul class="about-list list">
-            <li class="about-list-item">
-              <img
-                src="./images/about-img-1.jpg"
-                alt="барбер бриє бороду"
-                width="270"
-                height="445"
-              />
+          <ul class="about__list list">
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="./images/about/tablet/img1.jpg 1x, ./images/about/tablet/img1@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="./images/about/desktop/img1.jpg 1x, ./images/about/desktop/img1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/about-img-1.jpg" alt="барбер бриє бороду" " />
+              </picture>
             </li>
-            <li class="about-list-item">
-              <img src="./images/about-img-2.jpg" alt=" барбер стриже" width="270" height="445" />
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="./images/about/tablet/img2.jpg 1x, ./images/about/tablet/img2@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="./images/about/desktop/img2.jpg 1x, ./images/about/desktop/img2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/about-img-2.jpg" alt=" барбер стриже" " />
+              </picture>
             </li>
           </ul>
-          <div class="thumb">
-            <p class="about-subtitle">Про нас</p>
-            <h2 class="about-title">Кращий Барбершоп твого міста</h2>
-            <p class="about-description">
+          <div class="about__thumb">
+            <p class="about__subtitle subtitle">Про нас</p>
+            <h2 class="about__title title">Кращий Барбершоп твого міста</h2>
+            <p class="about__description">
               Якщо ти хочеш додати до свого образу більше впевненості – тобі точно до нас.
             </p>
-            <p class="about-text">
+            <p class="about__text">
               Ми команда, яка ніколи не зупиняється на досягнутому та прагне змін. І коли ти
               потрапиш до рук нашого майстра, то вже ніколи не зможеш бути колишнім. Ми команда, яка
               завжди з клієнтами "на одній хвилі". Тому, ми завжди готові вдосконалювати кожного,
               хто до нас приходить!
             </p>
-            <button type="button" class="about-btn btn">онлайн-запис</button>
+            <button type="button" class="about__btn btn">онлайн-запис</button>
           </div>
         </div>
       </section>
-      <section
-        id="price"
-        class="price"
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-      >
+      <section id="price" class="price section">
         <div class="container">
-          <p class="price-subtitle">Проведи час в компанії кращих майстрів</p>
-          <h2 class="price-title">Послуги та ціни</h2>
-          <div class="prices">
-            <ul class="price-list list">
-              <li class="price-list-item">
-                <p class="price-text">Чоловіча стрижка</p>
-                <p class="price-description">від 300 грн.</p>
+          <p class="price__subtitle subtitle">Проведи час в компанії кращих майстрів</p>
+          <h2 class="price__title title">Послуги та ціни</h2>
+          <div class="price__thumb">
+            <ul class="price__list list">
+              <li class="price__item">
+                <p class="price__text">Чоловіча стрижка</p>
+                <p class="price__description">від 300 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Стрижка бороди</p>
-                <p class="price-description">від 200 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Стрижка бороди</p>
+                <p class="price__description">від 200 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Стрижка вусів</p>
-                <p class="price-description">від 200 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Стрижка вусів</p>
+                <p class="price__description">від 200 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Гоління небезпечною бритвою</p>
-                <p class="price-description">від 200 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Гоління небезпечною бритвою</p>
+                <p class="price__description">від 200 грн.</p>
               </li>
             </ul>
-            <ul class="price-list list">
-              <li class="price-list-item">
-                <p class="price-text">Стрижка у стажера</p>
-                <p class="price-description">від 50 грн.</p>
+            <ul class="price__list list">
+              <li class="price__item">
+                <p class="price__text">Стрижка у стажера</p>
+                <p class="price__description">від 50 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Стрижка під насадку</p>
-                <p class="price-description">від 200 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Стрижка під насадку</p>
+                <p class="price__description">від 200 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Дитяча стрижка (до 12 років)</p>
-                <p class="price-description">від 300 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Дитяча стрижка (до 12 років)</p>
+                <p class="price__description">від 300 грн.</p>
               </li>
-              <li class="price-list-item">
-                <p class="price-text">Камуфлювання сивини</p>
-                <p class="price-description">від 200 грн.</p>
+              <li class="price__item">
+                <p class="price__text">Камуфлювання сивини</p>
+                <p class="price__description">від 200 грн.</p>
               </li>
             </ul>
           </div>
-          <button type="button" class="price-btn btn">онлайн-запис</button>
+          <button type="button" class="price__btn btn">онлайн-запис</button>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits section">
         <div class="container">
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <span class="benefits-accent-number">600</span>
-              <p class="benefits-awards">Задоволених клієнтів на день</p>
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <span class="benefits__accent-number">600</span>
+              <p class="benefits__awards">Задоволених клієнтів на день</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-accent-number">50</span>
-              <p class="benefits-awards">Нагород за відмінний сервіс</p>
+            <li class="benefits__item">
+              <span class="benefits__accent-number">50</span>
+              <p class="benefits__awards">Нагород за відмінний сервіс</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-accent-number">20</span>
-              <p class="benefits-awards">Найкращих майстрів Києва</p>
+            <li class="benefits__item">
+              <span class="benefits__accent-number">20</span>
+              <p class="benefits__awards">Найкращих майстрів Києва</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-accent-number">100</span>
-              <p class="benefits-awards">Подарунків постійним клієнтам</p>
+            <li class="benefits__item">
+              <span class="benefits__accent-number">100</span>
+              <p class="benefits__awards">Подарунків постійним клієнтам</p>
             </li>
           </ul>
-          <div class="benefit-description">
-            <p class="benefits-subtitle">стара традиційна школа</p>
-            <h2 class="benefits-title">
+          <div class="benefit__description">
+            <p class="benefits__subtitle subtitle">стара традиційна школа</p>
+            <h2 class="benefits__title title">
               Чому приходять <br />
               саме до нас?
             </h2>
-            <p class="benefits-text">
+            <p class="benefits__text">
               Про нас говорять лише хороше. Але краще 1 раз побачити та відчути, ніж 10 разів
               прочитати.
             </p>
@@ -222,44 +242,44 @@
       </section>
       <section class="master">
         <div class="container">
-          <p class="master-subtitle">для справжніх поціновувачів атмосфери</p>
-          <h2 id="masters" class="master-title">Наші майстри</h2>
-          <ul class="master-list list">
-            <li class="master-item">
+          <p class="master__subtitle subtitle">для справжніх поціновувачів атмосфери</p>
+          <h2 id="masters" class="master__title title">Наші майстри</h2>
+          <ul class="master__list list">
+            <li class="master__item">
               <img
-                class="master-photo"
+                class="master__photo"
                 src="./images/masters-img-1.jpg"
                 alt="Майстер барбершопа"
                 width="370"
                 height="346"
               />
-              <h3 lang="en" class="master-name">John Smith</h3>
-              <p lang="en" class="master-vacation">Extreme Barber</p>
-              <ul class="social-list list">
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
+              <h3 lang="en" class="master__name">John Smith</h3>
+              <p lang="en" class="master__vacation">Extreme Barber</p>
+              <ul class="soc-list list">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="soc-list__icon" width="20" height="20">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="soc-list__icon" width="20" height="20">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="soc-list__icon" width="20" height="20">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="soc-list__icon" width="20" height="20">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -351,7 +371,7 @@
           </ul>
         </div>
       </section>
-      <section class="galery">
+      <!-- <section class="galery">
         <div class="container">
           <p class="galery-subtitle">Латинською мовою "барба" означає "борода"</p>
           <h2 class="galery-title visually-hidden">Галерея</h2>
@@ -370,8 +390,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="subscribe-section" id="contacts">
+      </section> -->
+      <!-- <section class="subscribe-section" id="contacts">
         <div class="container">
           <div class="subscribe">
             <h2 class="subscribe-title">Онлайн-запис</h2>
@@ -431,9 +451,9 @@
             <p class="work-graphic-time">Щоденно з 9:00 до 22:00</p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="footer-copy">&copy;Copyright 2020</p>
         <ul class="footer-list list">
@@ -449,7 +469,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

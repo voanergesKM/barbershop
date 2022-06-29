@@ -3,7 +3,7 @@
 
   margin-right: 60px;
 
-  @media screen and (max-width: 767px) {
-    position: fixed;
+  & img {
+    fill: $white-color;
   }
 }
