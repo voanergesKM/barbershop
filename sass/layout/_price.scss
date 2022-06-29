@@ -1,0 +1,124 @@
+.price {
+  background-image: url(../images/price-bkg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //   max-width: 1280px;
+  margin: 0 auto;
+  max-width: 1280px;
+
+  background-color: #111319;
+}
+
+.section {
+}
+
+.container {
+}
+
+.price__subtitle {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+}
+
+.price__title {
+  color: $white-color;
+  margin-bottom: 44px;
+}
+
+.title {
+}
+
+.price__thumb {
+  @media screen and (max-width: 1199px) {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+    margin-bottom: 50px;
+    padding: 30px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.price__list {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include desktop {
+    padding: 30px 40px;
+    flex-basis: calc(100% / 2);
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    &:last-child {
+      background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+  }
+}
+
+.list {
+  margin-bottom: -20px;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-bottom: 20px;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: currentColor;
+    flex-grow: 1;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.price__text {
+  color: $primary-description-text;
+  font-size: 14px;
+
+  order: -1;
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.price__description {
+  color: $primary-description-text;
+  font-size: 14px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.price__btn {
+  display: block;
+  color: $white-color;
+  margin: 0 auto;
+}
+
+.btn {
+}
