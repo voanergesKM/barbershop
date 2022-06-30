@@ -1,0 +1,33 @@
+.galery {
+  .container {
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.section {
+}
+
+.galery__subtitle {
+  margin-bottom: 56px;
+  color: $secondary-text-color;
+}
+
+.galery__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @include tablet {
+    // width: calc((100% - 30px) / 2);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.galery__item {
+}

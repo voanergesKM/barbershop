@@ -447,27 +447,131 @@
           </div>
         </div>
       </section>
-      <!-- <section class="galery">
+      <section class="galery section">
         <div class="container">
-          <p class="galery-subtitle">Латинською мовою "барба" означає "борода"</p>
-          <h2 class="galery-title visually-hidden">Галерея</h2>
-          <ul class="galery-list list">
-            <li class="galery-item">
-              <img src="./images/galery-img-1.jpg" alt="Барбер в роботі" width="270" height="360" />
+          <p class="galery__subtitle subtitle">Латинською мовою "барба" означає "борода"</p>
+          <h2 class="galery__title visualy-hidden">Галерея</h2>
+          <ul class="galery__list list">
+            <li class="galery__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/galery/mobile/rectangle25.jpg    1x,
+                    ./images/galery/mobile/rectangle25@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/tablet/rectangle25.jpg    1x,
+                    ./images/galery/tablet/rectangle25@2x.jpg 2x
+                  "
+                  media="(min-width:768px) and (max-width:1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/desktop/rectangle25.jpg    1x,
+                    ./images/galery/desktop/rectangle25@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img src="./images/galery-img-1.jpg" alt="Барбер в роботі" />
+              </picture>
             </li>
-            <li class="galery-item">
-              <img src="./images/galery-img-2.jpg" alt="Барбер в роботі" width="270" height="360" />
+            <li class="galery__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/galery/mobile/rectangle26.jpg    1x,
+                    ./images/galery/mobile/rectangle26@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/tablet/rectangle26.jpg    1x,
+                    ./images/galery/tablet/rectangle26@2x.jpg 2x
+                  "
+                  media="(min-width:768px) and (max-width:1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/desktop/rectangle26.jpg    1x,
+                    ./images/galery/desktop/rectangle26@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img src="./images/galery-img-2.jpg" alt="Барбер в роботі" />
+              </picture>
             </li>
-            <li class="galery-item">
-              <img src="./images/galery-img-3.jpg" alt="Барбер в роботі" width="270" height="360" />
+            <li class="galery__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/galery/mobile/rectangle27.jpg    1x,
+                    ./images/galery/mobile/rectangle27@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/tablet/rectangle27.jpg    1x,
+                    ./images/galery/tablet/rectangle27@2x.jpg 2x
+                  "
+                  media="(min-width:768px) and (max-width:1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/desktop/rectangle27.jpg    1x,
+                    ./images/galery/desktop/rectangle27@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img src="./images/galery-img-3.jpg" alt="Барбер в роботі" />
+              </picture>
             </li>
-            <li class="galery-item">
-              <img src="./images/galery-img-4.jpg" alt="Барбер в роботі" width="270" height="360" />
+            <li class="galery__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/galery/mobile/rectangle28.jpg    1x,
+                    ./images/galery/mobile/rectangle28@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/tablet/rectangle28.jpg    1x,
+                    ./images/galery/tablet/rectangle28@2x.jpg 2x
+                  "
+                  media="(min-width:768px) and (max-width:1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/galery/desktop/rectangle28.jpg    1x,
+                    ./images/galery/desktop/rectangle28@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img src="./images/galery-img-4.jpg" alt="Барбер в роботі" />
+              </picture>
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="subscribe-section" id="contacts">
+      </section>
+      <section class="subscribe-section" id="contacts">
         <div class="container">
           <div class="subscribe">
             <h2 class="subscribe-title">Онлайн-запис</h2>
@@ -527,7 +631,7 @@
             <p class="work-graphic-time">Щоденно з 9:00 до 22:00</p>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container">
