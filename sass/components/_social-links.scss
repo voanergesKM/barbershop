@@ -1,0 +1,30 @@
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.soc-list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  fill: $secondary-text-color;
+
+  transition: fill 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.soc-list__icon {
+}

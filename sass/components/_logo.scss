@@ -1,9 +1,13 @@
 .logo {
-  display: inline-block;
+  // display: inline-block;
 
   margin-right: 60px;
+}
 
-  & img {
-    fill: $white-color;
+.logo__icon {
+  fill: $white-color;
+
+  @include tablet {
+    fill: $secondary-text-color;
   }
 }

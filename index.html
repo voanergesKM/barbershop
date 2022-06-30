@@ -38,7 +38,10 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">
-          <img src="./images/logo.svg" alt="логотип сайту" />
+          <svg class="logo__icon" width="69" height="56">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          <!-- <img src="./images/logo.svg" alt="" /> -->
         </a>
         <div class="header__thumb" id="menu-container" data-menu>
           <nav class="nav">
@@ -242,133 +245,206 @@
       </section>
       <section class="master">
         <div class="container">
-          <p class="master__subtitle subtitle">для справжніх поціновувачів атмосфери</p>
-          <h2 id="masters" class="master__title title">Наші майстри</h2>
-          <ul class="master__list list">
-            <li class="master__item">
-              <img
-                class="master__photo"
-                src="./images/masters-img-1.jpg"
-                alt="Майстер барбершопа"
-                width="370"
-                height="346"
-              />
-              <h3 lang="en" class="master__name">John Smith</h3>
-              <p lang="en" class="master__vacation">Extreme Barber</p>
-              <ul class="soc-list list">
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="master-item">
-              <img
-                class="master-photo"
-                src="./images/masters-img-2.jpg"
-                alt="Майстер барбершопа"
-                width="370"
-                height="346"
-              />
-              <h3 lang="en" class="master-name">Michele Doe</h3>
-              <p lang="en" class="master-vacation">Extreme Barber</p>
-              <ul class="social-list list">
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="master-item">
-              <img
-                class="master-photo"
-                src="./images/masters-img-3.jpg"
-                alt="Майстер барбершопа"
-                width="370"
-                height="346"
-              />
-              <h3 lang="en" class="master-name">Alan Black</h3>
-              <p lang="en" class="master-vacation">Extreme Barber</p>
-              <ul class="social-list list">
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div class="masters-wrapper">
+            <p class="master__subtitle subtitle">для справжніх поціновувачів атмосфери</p>
+            <h2 id="masters" class="master__title title">Наші майстри</h2>
+            <ul class="master__list list">
+              <li class="master__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/masters/mobile/img1.jpg    1x,
+                      ./images/masters/mobile/img1@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/tablet/img1.jpg    1x,
+                      ./images/masters/tablet/img1@2x.jpg 2x
+                    "
+                    media="(min-width:768px) and (max-width:1199px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/desktop/img1.jpg    1x,
+                      ./images/masters/desktop/img1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img class="master__photo" src="./images/masters-img-1.jpg" alt="Майстер
+                  барбершопа" " />
+                </picture>
+                <h3 lang="en" class="master__name">John Smith</h3>
+                <p lang="en" class="master__vacation">Extreme Barber</p>
+                <ul class="soc-list list">
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="master__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/masters/mobile/img2.jpg    1x,
+                      ./images/masters/mobile/img2@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/tablet/img2.jpg    1x,
+                      ./images/masters/tablet/img2@2x.jpg 2x
+                    "
+                    media="(min-width:768px) and (max-width:1199px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/desktop/img2.jpg    1x,
+                      ./images/masters/desktop/img2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img
+                    class="master__photo"
+                    src="./images/masters-img-2.jpg"
+                    alt="Майстер барбершопа"
+                  />
+                </picture>
+
+                <h3 lang="en" class="master__name">Michele Doe</h3>
+                <p lang="en" class="master__vacation">Extreme Barber</p>
+                <ul class="soc-list list">
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="master__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/masters/mobile/img3.jpg    1x,
+                      ./images/masters/mobile/img3@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/tablet/img3.jpg    1x,
+                      ./images/masters/tablet/img3@2x.jpg 2x
+                    "
+                    media="(min-width:768px) and (max-width:1199px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/masters/desktop/img3.jpg    1x,
+                      ./images/masters/desktop/img3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img
+                    class="master__photo"
+                    src="./images/masters-img-3.jpg"
+                    alt="Майстер барбершопа"
+                  />
+                </picture>
+
+                <h3 lang="en" class="master__name">Alan Black</h3>
+                <p lang="en" class="master__vacation">Extreme Barber</p>
+                <ul class="soc-list list">
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list__item">
+                    <a href="" class="soc-list__link">
+                      <svg class="soc-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- <section class="galery">

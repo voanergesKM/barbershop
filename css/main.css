@@ -82,12 +82,17 @@ img {
 }
 
 .logo {
-  display: inline-block;
   margin-right: 60px;
 }
 
-.logo img {
+.logo__icon {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__icon {
+    fill: #303030;
+  }
 }
 
 .btn {
@@ -155,6 +160,40 @@ img {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+}
+
+.soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.soc-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-list__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: #303030;
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+.soc-list__link:hover, .soc-list__link:focus {
+  fill: #ff6c00;
 }
 
 .header .container {
@@ -957,5 +996,74 @@ img {
   .benefits__text {
     width: 500px;
   }
+}
+
+.master .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.master__subtitle {
+  color: #303030;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.master__title {
+  margin-bottom: 44px;
+  color: #303030;
+}
+
+@media screen and (min-width: 1200px) {
+  .master__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .master__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .master__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.master__photo {
+  margin-bottom: 30px;
+}
+
+.master__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.master__vacation {
+  font-size: 14px;
+  line-height: 1.36;
+  color: #ff6c00;
+  text-align: center;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
