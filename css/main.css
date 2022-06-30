@@ -432,8 +432,8 @@ img {
   .hero {
     padding-top: 208px;
     padding-bottom: 183px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/mobile/slider-img3.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/mobile/slider-img3.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/mobile/slider-img3.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/mobile/slider-img3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -443,8 +443,8 @@ img {
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/mobile/slider-img3@2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/mobile/slider-img3@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/mobile/slider-img3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/mobile/slider-img3@2x.jpg);
   }
 }
 
@@ -520,8 +520,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero__content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/tablet/slider-img1.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/tablet/slider-img1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/tablet/slider-img1.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/tablet/slider-img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -537,22 +537,22 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/tablet/slider-img1@2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/tablet/slider-img1@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/tablet/slider-img1@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/tablet/slider-img1@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 1dppx) {
   .hero__content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/desktop/slider-img1.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/desktop/slider-img1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/desktop/slider-img1.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/desktop/slider-img1.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/hero/desktop/slider-img1@2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/hero/desktop/slider-img1@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/desktop/slider-img1@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/desktop/slider-img1@2x.jpg);
   }
 }
 
