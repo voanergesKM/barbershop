@@ -571,65 +571,68 @@
           </ul>
         </div>
       </section>
-      <section class="subscribe-section" id="contacts">
-        <div class="container">
-          <div class="subscribe">
-            <h2 class="subscribe-title">Онлайн-запис</h2>
-            <form class="form">
-              <div class="form__thumb">
-                <label class="form__fuild">
-                  <input type="name" class="form__input form__input--name" placeholder=" " />
-                  <span class="form__label">Ім'я*</span></label
-                >
-                <label class="form__fuild">
-                  <input type="tel" class="form__input form__input--tel" placeholder=" " />
-                  <span class="form__label">Телефон*</span></label
-                >
-              </div>
-              <label class="form__fuild comment">
-                <textarea type="text" class="form__input comment__input" placeholder=" "></textarea>
-                <span class="form__label comment__label">повідомлення</span>
-              </label>
-              <button type="button" class="subscribe-btn btn">Надіслати</button>
-            </form>
-          </div>
-          <div class="contact">
-            <h2 class="contact-title">Контакти</h2>
-            <address class="address">
-              <ul class="addres-list list">
-                <li class="address-item">
+      <section class="subscribe" id="contacts">
+        <!-- <div class="container"> -->
+        <div class="subscribe__thumb">
+          <h2 class="subscribe__title">Онлайн-запис</h2>
+          <form class="form">
+            <div class="form__thumb">
+              <label class="form__fuild">
+                <input type="name" class="form__input form__input--name" placeholder=" " />
+                <span class="form__label">Ім'я*</span></label
+              >
+              <label class="form__fuild">
+                <input type="tel" class="form__input form__input--tel" placeholder=" " />
+                <span class="form__label">Телефон*</span></label
+              >
+            </div>
+            <label class="form__fuild comment">
+              <textarea type="text" class="form__input comment__input" placeholder=" "></textarea>
+              <span class="form__label comment__label">повідомлення</span>
+            </label>
+            <button type="button" class="subscribe__btn btn">Надіслати</button>
+          </form>
+        </div>
+        <div class="contact">
+          <h2 class="contact__title">Контакти</h2>
+          <div class="contact__thumb">
+            <address class="contact__address">
+              <ul class="contact__list list">
+                <li class="contact__item">
                   <a
                     href="https://goo.gl/maps/1SELuurHvSz8Asc47"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
-                    class="address-geolink"
+                    class="contact__geolink"
                   >
-                    <svg class="address-icon" width="24" height="24">
+                    <svg class="contact__icon" width="20" height="20">
                       <use href="./images/sprite.svg#location"></use>
                     </svg>
-                    вул. Василькова, 7А <br />
-                    Київ, 08132</a
+                    вул.Василькова, 7А Київ, 08132</a
                   >
                 </li>
-                <li class="address-item">
-                  <a href="tel:+380441111111" class="address-tel">
-                    <svg class="address-icon" width="24" height="24">
+                <li class="contact__item">
+                  <a href="tel:+380441111111" class="contact__tel">
+                    <svg class="contact__icon" width="20" height="20">
                       <use href="./images/sprite.svg#telephone"></use></svg
                     >+38 044 111 11 11</a
                   >
                 </li>
-                <li class="address-item">
-                  <a href="mailto:barbershop@email.com" class="address-mail">
-                    <svg class="address-icon" width="24" height="24">
+                <li class="contact__item">
+                  <a href="mailto:barbershop@email.com" class="contact__mail">
+                    <svg class="contact__icon" width="20" height="20">
                       <use href="./images/sprite.svg#email"></use></svg
                     >barbershop@email.com</a
                   >
                 </li>
               </ul>
             </address>
-            <p class="work-graphic-text">Графік роботи</p>
-            <p class="work-graphic-time">Щоденно з 9:00 до 22:00</p>
+            <div class="work-thumb">
+              <p class="contact__graphic-text">Графік роботи</p>
+              <p class="contact__graphic-time">Щоденно з 9:00 до 22:00</p>
+            </div>
           </div>
+          <!-- </div> -->
         </div>
       </section>
     </main>
