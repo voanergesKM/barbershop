@@ -19,7 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -112,6 +113,15 @@
             <p class="hero__text">
               Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
             </p>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-one"></div>
+                <div class="swiper-slide slide-two"></div>
+                <div class="swiper-slide slide-three"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -657,6 +667,8 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js" type="module"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

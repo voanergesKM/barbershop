@@ -17,6 +17,7 @@
   }
 
   & .container {
+    position: relative;
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -73,6 +74,9 @@
 }
 
 .hero__content {
+  position: relative;
+  z-index: 99999;
+
   @media screen and (max-width: 767px) {
     max-width: 306px;
   }
@@ -83,11 +87,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: var(--primary-text-color);
+    background-color: $primary-text-color;
 
     padding-top: 280px;
     padding-bottom: 234px;
     padding-left: 70px;
+    padding-right: 100px;
     flex-grow: 1;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
