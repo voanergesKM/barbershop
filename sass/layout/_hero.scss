@@ -17,7 +17,7 @@
   }
 
   & .container {
-    position: relative;
+    // position: relative;
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -74,8 +74,8 @@
 }
 
 .hero__content {
-  position: relative;
-  z-index: 99999;
+  // position: relative;
+  // z-index: 99999;
 
   @media screen and (max-width: 767px) {
     max-width: 306px;
